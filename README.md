@@ -6,6 +6,10 @@ Image Block for the [Editor.js](https://editorjs.io).
 
 ![](https://capella.pics/63a03d04-3816-45b2-87b2-d85e556f0066.jpg)
 
+## ✨New features of this fork✨
+
+- Add `BlockAPI` param to the custom uploading methods, see [Providing custom uploading methods](https://github.com/chrishyze/editor-js-image?tab=readme-ov-file#providing-custom-uploading-methods) bellow.
+
 ## Features
 
 - Uploading file from the device
@@ -14,10 +18,6 @@ Image Block for the [Editor.js](https://editorjs.io).
 - Pasting files and screenshots from Clipboard
 - Allows adding a border, a background and a caption
 - Allows stretching an image to the container's full-width
-
-**✨New feature of this fork:**
-
-- Add `BlockAPI` param to the custom uploading methods, see [Providing custom uploading methods](https://github.com/chrishyze/editor-js-image?tab=readme-ov-file#providing-custom-uploading-methods) bellow.
 
 **Notes**
 
@@ -28,10 +28,16 @@ This Tool is also capable of uploading & displaying video files using the `<vide
 
 ## Installation
 
-Currently you can load this perticular fork from JsDelivr CDN:
+NPM:
+
+```sh
+npm install @clovage/editor-js-image
+```
+
+JsDelivr CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/chrishyze/editor-js-image/dist/image.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cloage/editor-js-image/dist/image.umd.js"></script>
 ```
 
 ## Usage
@@ -39,7 +45,7 @@ Currently you can load this perticular fork from JsDelivr CDN:
 Add a new Tool to the `tools` property of the Editor.js initial config.
 
 ```javascript
-import ImageTool from '@editorjs/image';
+import ImageTool from '@clovage/editor-js-image';
 
 // or if you inject ImageTool via standalone script
 const ImageTool = window.ImageTool;
@@ -234,7 +240,7 @@ Both methods must return a Promise that resolves with response in a format that 
 Example:
 
 ```js
-import ImageTool from '@editorjs/image';
+import ImageTool from '@clovage/editor-js-image';
 import type { BlockAPI } from '@editorjs/editorjs';
 
 var editor = EditorJS({

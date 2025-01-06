@@ -1,5 +1,5 @@
 {
-  "name": "@editorjs/image",
+  "name": "@clovage/editor-js-image",
   "version": "2.10.1",
   "keywords": [
     "codex editor",
@@ -9,7 +9,7 @@
   ],
   "description": "Image Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/image",
+  "repository": "https://github.com/clovage/editor-js-image",
   "files": [
     "dist"
   ],
